@@ -1,0 +1,12 @@
+{
+    "scope": "source.groovy.grails.domain",
+    "completions": [
+        {
+            "trigger": "ArrayBuffer();"
+        },
+        {
+            "trigger": "zlib.inflateRaw(buffer, callback);",
+            "contents": "zlib.inflateRaw(${1:buffer}, ${2:callback});$0"
+        }
+    ]
+}
