@@ -2,6 +2,42 @@
     "scope": "source.groovy.grails.domain",
     "completions": [
         {
+            "trigger": "afterDelete",
+            "contents": "afterDelete() {\n\t${1:event}\n}"
+        },
+        {
+            "trigger": "afterInsert",
+            "contents": "afterInsert() {\n\t${1:event}\n}"
+        },
+        {
+            "trigger": "afterLoad",
+            "contents": "afterLoad() {\n\t${1:event}\n}"
+        },
+        {
+            "trigger": "afterUpdate",
+            "contents": "afterUpdate() {\n\t${1:event}\n}"
+        },
+        {
+            "trigger": "beforeDelete",
+            "contents": "beforeDelete() {\n\t${1:event}\n}"
+        },
+        {
+            "trigger": "beforeInsert",
+            "contents": "beforeInsert() {\n\t${1:event}\n}"
+        },
+        {
+            "trigger": "beforeLoad",
+            "contents": "beforeLoad() {\n\t${1:event}\n}"
+        },
+        {
+            "trigger": "beforeUpdate",
+            "contents": "beforeUpdate() {\n\t${1:event}\n}"
+        },
+        {
+            "trigger": "beforeValidate",
+            "contents": "beforeValidate() {\n\t${1:event}\n}"
+        },
+        {
             "trigger": "belongsTo",
             "contents": "static belongsTo = [${1:name}: ${2:Type}]"
         },
@@ -36,6 +72,10 @@
         {
             "trigger": "namedQueries",
             "contents": "static namedQueries = {\n\t${1:query}\n}"
+        },
+        {
+            "trigger": "onLoad",
+            "contents": "onLoad() {\n\t${1:event}\n}"
         },
         {
             "trigger": "transients",
