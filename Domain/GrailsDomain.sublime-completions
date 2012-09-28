@@ -2,11 +2,44 @@
     "scope": "source.groovy.grails.domain",
     "completions": [
         {
-            "trigger": "ArrayBuffer();"
+            "trigger": "belongsTo",
+            "contents": "static belongsTo = [${1:name}: ${2:Type}]"
         },
         {
-            "trigger": "zlib.inflateRaw(buffer, callback);",
-            "contents": "zlib.inflateRaw(${1:buffer}, ${2:callback});$0"
+            "trigger": "constraints",
+            "contents": "static constraints = {\n\t${1:property} ${2:constraint}: ${3:value}\n}"
+        },
+        {
+            "trigger": "embedded",
+            "contents": "static embedded = ['${1:propertyName}']"
+        },
+        {
+            "trigger": "fetchMode",
+            "contents": "static fetchMode = [${1:name}: '${2:eager}']"
+        },
+        {
+            "trigger": "hasMany",
+            "contents": "static hasMany = [${1:name}: ${2:Type}]"
+        },
+        {
+            "trigger": "hasOne",
+            "contents": "static hasOne = [${1:name}: ${2:Type}]"
+        },
+        {
+            "trigger": "mappedBy",
+            "contents": "static mappedBy = [${1:name}: ${2:Type}]"
+        },
+        {
+            "trigger": "mapping",
+            "contents": "static mapping = {\n\t${1:property}\n}"
+        },
+        {
+            "trigger": "namedQueries",
+            "contents": "static namedQueries = {\n\t${1:query}\n}"
+        },
+        {
+            "trigger": "transients",
+            "contents": "static transients = ['${1:propertyName}']"
         }
     ]
 }
