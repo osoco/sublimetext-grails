@@ -2,11 +2,74 @@
     "scope": "source.groovy.grails.controller",
     "completions": [
         {
-            "trigger": "bindData();"
+            "trigger": "actionName"
         },
         {
-            "trigger": "zlib.inflateRaw(buffer, callback);",
-            "contents": "zlib.inflateRaw(${1:buffer}, ${2:callback});$0"
+            "trigger": "def afterInterceptor",
+            "contents": "def afterInterceptor { ${1:model} ->\n\t${2:interceptor}\n}"
+        },
+        {
+            "trigger": "static allowedMethods",
+            "contents": "static allowedMethods = [${1:action}: \"${2:request method}\"]"
+        },
+        {
+            "trigger": "def beforeInterceptor",
+            "contents": "def beforeInterceptor {\n\t${1:interceptor}\n}"
+        },
+        {
+            "trigger": "bindData",
+            "contents": "bindData(${1:target}, ${2:params})"
+        },
+        {
+            "trigger": "chain",
+            "contents": "chain action: '${1:}', model: [${2:}]"
+        },
+        {
+            "trigger": "controllerName"
+        },
+        {
+            "trigger": "static defaultAction",
+            "contents": "static defaultAction = '${1:action}'"
+        },
+        {
+            "trigger": "flash"
+        },
+        {
+            "trigger": "forward",
+            "contents": "forward action: '${1:}'"
+        },
+        {
+            "trigger": "grailsApplication"
+        },
+        {
+            "trigger": "params"
+        },
+        {
+            "trigger": "redirect"
+        },
+        {
+            "trigger": "render",
+            "contents": "render '${1:}'"
+        },
+        {
+            "trigger": "request"
+        },
+        {
+            "trigger": "response"
+        },
+        {
+            "trigger": "servletContext"
+        },
+        {
+            "trigger": "session"
+        },
+        {
+            "trigger": "withForm",
+            "contents": "withForm {\n\t${1:good request}\n}.invalidToken {\n\t${2:bad request}\n}"
+        },
+        {
+            "trigger": "withFormat",
+            "contents": "withFormat {\n\t${1:}\n}"
         }
     ]
 }
