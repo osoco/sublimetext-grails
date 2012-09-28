@@ -33,19 +33,16 @@ class GrailsSyntaxCommand(sublime_plugin.EventListener):
         self.reset_cache_variables()
 
         if not self.ext == '.groovy':
-            print "Not Groovy file - GrailsSyntax exiting"
             return
 
         if self.is_domain():
-            self.set_syntax('Python Django', 'Djaneiro')
-            return
+            self.set_syntax('GrailsDomain', 'Grails/Domain')
         else:
-            self.set_syntax('Python', 'Python')
-            return
+            self.set_syntax('Groovy', 'Groovy')
 
 
-    def is_django(self):
-        if self.view.find('from django',0,sublime.IGNORECASE) > -1:
+    def is_domain(self):
+        if 'grails-app/domain' in self.path:
             return True
         return False
 
