@@ -1,0 +1,186 @@
+{
+    "scope": "source.groovy.grails",
+    "completions": [
+        {
+            "trigger": "addTo",
+            "contents": "addTo${1:Collection}(${2:item})"
+        },
+        {
+            "trigger": "attach()"
+        },
+        {
+            "trigger": "clearErrors()"
+        },
+        {
+            "trigger": "count()"
+        },
+        {
+            "trigger": "countBy",
+            "contents": "countBy${1:Property}(${2:value})"
+        },
+        {
+            "trigger": "createCriteria()"
+        },
+        {
+            "trigger": "delete()"
+        },
+        {
+            "trigger": "discard()"
+        },
+        {
+            "trigger": "errors"
+        },
+        {
+            "trigger": "executeQuery",
+            "contents": "executeQuery(${1:query})"
+        },
+        {
+            "trigger": "executeUpdate",
+            "contents": "executeUpdate(${1:query})"
+        },
+        {
+            "trigger": "exists",
+            "contents": "exists(${1:id})"
+        },
+        {
+            "trigger": "find",
+            "contents": "find(${1:query})"
+        },
+        {
+            "trigger": "findAll()"
+        },
+        {
+            "trigger": "findAll(query)",
+            "contents": "findAll(${1:query})"
+        },
+        {
+            "trigger": "findAllBy",
+            "contents": "findAllBy${1:Property}(${2:value})"
+        },
+        {
+            "trigger": "findAllWhere",
+            "contents": "findAllWhere(${1:property}: ${2:value})"
+        },
+        {
+            "trigger": "findBy",
+            "contents": "findBy${1:Property}(${2:value})"
+        },
+        {
+            "trigger": "findOrCreateBy",
+            "contents": "findOrCreateBy${1:Property}(${2:value})"
+        },
+        {
+            "trigger": "findOrCreateWhere",
+            "contents": "findOrCreateWhere(${1:property}: ${2:value})"
+        },
+        {
+            "trigger": "findOrSaveBy",
+            "contents": "findOrSaveBy${1:Property}(${2:value})"
+        },
+        {
+            "trigger": "findOrSaveWhere",
+            "contents": "findOrSaveWhere(${1:property}: ${2:value})"
+        },
+        {
+            "trigger": "findWhere",
+            "contents": "findWhere(${1:property}: ${2:value})"
+        },
+        {
+            "trigger": "first()"
+        },
+        {
+            "trigger": "get",
+            "contents": "get(${1:id})"
+        },
+        {
+            "trigger": "getAll()"
+        },
+        {
+            "trigger": "dirtyPropertyNames"
+        },
+        {
+            "trigger": "getPersistentValue",
+            "contents": "getPersistentValue('${1:property}')"
+        },
+        {
+            "trigger": "hasErrors()"
+        },
+        {
+            "trigger": "ident()"
+        },
+        {
+            "trigger": "instanceOf",
+            "contents": "instanceOf(${1:Class})"
+        },
+        {
+            "trigger": "isAttached()"
+        },
+        {
+            "trigger": "isDirty()"
+        },
+        {
+            "trigger": "last()"
+        },
+        {
+            "trigger": "list()"
+        },
+        {
+            "trigger": "listOrderBy",
+            "contents": "listOrderBy${1:Property}()"
+        },
+        {
+            "trigger": "load",
+            "contents": "load(${1:id})"
+        },
+        {
+            "trigger": "lock()"
+        },
+        {
+            "trigger": "merge()"
+        },
+        {
+            "trigger": "properties"
+        },
+        {
+            "trigger": "read",
+            "contents": "read(${1:id})"
+        },
+        {
+            "trigger": "refresh()"
+        },
+        {
+            "trigger": "removeFrom",
+            "contents": "removeFrom${1:Collection}(${2:item})"
+        },
+        {
+            "trigger": "save()"
+        },
+        {
+            "trigger": "validate()"
+        },
+        {
+            "trigger": "where",
+            "contents": "where {\n\t${1:criteria}\n}"
+        },
+        {
+            "trigger": "whereAny",
+            "contents": "whereAny {\n\t${1:criteria}\n}"
+        },
+        {
+            "trigger": "withCriteria",
+            "contents": "withCriteria {\n\t${1:criteria}\n}"
+        },
+        {
+            "trigger": "withNewSession",
+            "contents": "withNewSession { session ->\n\t${1}\n}"
+        },
+        {
+            "trigger": "withSession",
+            "contents": "withSession { session ->\n\t${1}\n}"
+        },
+        {
+            "trigger": "withTransaction",
+            "contents": "withTransaction { status ->\n\t${1}\n}"
+        }
+    ]
+}
