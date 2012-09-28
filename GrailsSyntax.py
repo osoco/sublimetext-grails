@@ -63,8 +63,3 @@ class GrailsSyntaxCommand(sublime_plugin.EventListener):
     def set_syntax(self, syntax, path):
         new_syntax = 'Packages/' + path + '/' + syntax + '.tmLanguage'
         self.view.set_syntax_file(new_syntax)
-      current_syntax = self.view.settings().get('syntax')
-
-        if current_syntax != new_syntax:
-            self.view.settings().set('syntax', new_syntax)
-            print "Switched syntax to: " + syntax
