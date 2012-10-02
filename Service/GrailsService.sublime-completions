@@ -1,0 +1,8 @@
+{
+    "scope": "source.groovy.grails.service",
+    "completions": [
+        {
+            "trigger": "static transactional = true"
+        }
+    ]
+}

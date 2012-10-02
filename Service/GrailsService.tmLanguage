@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>fileTypes</key>
+    <array>
+        <string>groovy</string>
+    </array>
+    <key>keyEquivalent</key>
+    <string>^~G</string>
+    <key>name</key>
+    <string>Grails Service (Groovy)</string>
+    <key>patterns</key>
+    <array>
+        <dict>
+            <key>include</key>
+            <string>source.groovy</string>
+        </dict>
+    </array>
+    <key>scopeName</key>
+    <string>source.groovy.grails.service</string>
+    <key>uuid</key>
+    <string>72bcf961-0920-44c5-8ec7-4a0afd1309fc</string>
+</dict>
+</plist>

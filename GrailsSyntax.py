@@ -38,6 +38,8 @@ class GrailsSyntaxCommand(sublime_plugin.EventListener):
             self.set_syntax('GrailsDomain', 'Grails/Domain')
         elif self.is_controller():
             self.set_syntax('GrailsController', 'Grails/Controller')
+        elif self.is_service():
+            self.set_syntax('GrailsService', 'Grails/Service')
         else:
             self.set_syntax('Groovy', 'Groovy')
 
@@ -49,7 +51,12 @@ class GrailsSyntaxCommand(sublime_plugin.EventListener):
 
 
     def is_controller(self):
-        if 'grails-app/controller' in self.path:
+        if 'grails-app/controllers' in self.path:
+            return True
+        return False
+
+    def is_service(self):
+        if 'grails-app/services' in self.path:
             return True
         return False
 
