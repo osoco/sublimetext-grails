@@ -32,13 +32,38 @@
 			<key>end</key>
 			<string>--%&gt;</string>
 		</dict>
-		<dict>
+<!-- 		<dict>
 			<key>begin</key>
 			<string>%{--</string>
 			<key>contentName</key>
 			<string>comment.block</string>
 			<key>end</key>
 			<string>--}%</string>
+		</dict> -->
+		<dict>
+			<key>begin</key>
+			<string>%{--</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.html.gsp</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>--}%</string>
+			<key>name</key>
+			<string>comment.block.html.gsp</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>--</string>
+					<key>name</key>
+					<string>invalid.illegal.bad-comments-or-CDATA.html.gsp</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -238,7 +263,7 @@
 				</dict>
 			</array>
 		</dict>
-		<dict>
+ 		<dict>
 			<key>begin</key>
 			<string>(&lt;/?)(\w+:\w+)</string>
 			<key>captures</key>
@@ -294,6 +319,12 @@
 					<string>source.groovy.embedded.html.grails</string>
 					<key>patterns</key>
 					<array>
+						<dict>
+							<key>match</key>
+							<string>\?|:</string>
+							<key>name</key>
+							<string>keyword.operator.ternary.expression-seperator.groovy</string>
+						</dict>
 						<dict>
 							<key>include</key>
 							<string>source.groovy</string>
