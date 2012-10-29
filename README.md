@@ -53,17 +53,14 @@ give us suggestions. If you modify the plugin, we'd love to get a pull request s
 
 ## Credits
 
-Arturo Herrero - [@ArturoHerrero](https://twitter.com/ArturoHerrero)
-
+Arturo Herrero - [@ArturoHerrero](https://twitter.com/ArturoHerrero)  
 Geli Crick - [@g_crick](https://twitter.com/g_crick)
 
-Thanks to [Osoco] for providing us with time to work on this project!
-
-## License
+Thanks to [OSOCO] for providing us with time to work on this project!
 
 
 
 [Grails]: http://grails.org/
 [Sublime Package Control]: http://wbond.net/sublime_packages/package_control
-[Osoco]: http://osoco.es
+[OSOCO]: http://osoco.es
 [issue tracker]: https://github.com/osoco/sublimetext-grails/issues
