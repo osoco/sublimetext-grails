@@ -54,6 +54,7 @@ give us suggestions. If you modify the plugin, we'd love to get a pull request s
 ## Credits
 
 Arturo Herrero - [@ArturoHerrero](https://twitter.com/ArturoHerrero)
+
 Geli Crick - [@g_crick](https://twitter.com/g_crick)
 
 Thanks to [Osoco] for providing us with time to work on this project!
