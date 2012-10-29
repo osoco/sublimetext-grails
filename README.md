@@ -65,4 +65,4 @@ Thanks to [Osoco] for providing us with time to work on this project!
 [Grails]: http://grails.org/
 [Sublime Package Control]: http://wbond.net/sublime_packages/package_control
 [Osoco]: http://osoco.es
-[issue tracker] : https://github.com/osoco/sublimetext-grails/issues
+[issue tracker]: https://github.com/osoco/sublimetext-grails/issues
