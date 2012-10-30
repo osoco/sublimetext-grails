@@ -32,14 +32,6 @@
 			<key>end</key>
 			<string>--%&gt;</string>
 		</dict>
-<!-- 		<dict>
-			<key>begin</key>
-			<string>%{--</string>
-			<key>contentName</key>
-			<string>comment.block</string>
-			<key>end</key>
-			<string>--}%</string>
-		</dict> -->
 		<dict>
 			<key>begin</key>
 			<string>%{--</string>
