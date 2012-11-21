@@ -25,11 +25,15 @@ class GrailsSyntaxCommand(sublime_plugin.EventListener):
     def check_syntax(self, view):
         self.view      = view
         self.file_name = view.file_name()
-    
+
         if not self.file_name: # buffer has never been saved
             return
 
         self.set_file_variables()
+
+        if self.ext == '.gdoc':
+            self.set_syntax('GrailsDoc', 'Grails/Doc')
+            return
 
         if not self.ext == '.groovy':
             return
