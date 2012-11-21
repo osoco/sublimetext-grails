@@ -25,7 +25,7 @@ class GrailsSyntaxCommand(sublime_plugin.EventListener):
     def check_syntax(self, view):
         self.view      = view
         self.file_name = view.file_name()
-    
+
         if not self.file_name: # buffer has never been saved
             return
 

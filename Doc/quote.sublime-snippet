@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+{quote}
+${1:source}
+{quote}
+]]></content>
+    <tabTrigger>quote..</tabTrigger>
+    <description>{quote} in GrailsDoc</description>
+    <scope>source.grails.gdoc</scope>
+</snippet>
