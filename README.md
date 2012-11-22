@@ -32,7 +32,7 @@ There are two main ways to install the *Grails Sublime Text 2 Package*:
 
 - GSP syntax highlighter (based on the TextMate bundle https://github.com/textmate/groovy-grails.tmbundle, with a few fixes)
 
-- [GDoc] (Grails documentation) syntax highlighting and snippets
+- Grails documentation ([GDoc]) syntax highlighting and snippets
 
 (Note: your color scheme might need to be adjusted to recognize the syntax highlighting changes)
 
