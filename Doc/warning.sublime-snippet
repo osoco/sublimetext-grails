@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+{warning}
+${1:message}
+{warning}
+]]></content>
+    <tabTrigger>warning..</tabTrigger>
+    <description>{warning} in GrailsDoc</description>
+    <scope>source.grails.gdoc</scope>
+</snippet>

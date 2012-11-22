@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+{note}
+${1:message}
+{note}
+]]></content>
+    <tabTrigger>note..</tabTrigger>
+    <description>{note} in GrailsDoc</description>
+    <scope>source.grails.gdoc</scope>
+</snippet>

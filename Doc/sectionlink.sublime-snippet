@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+[${1:linkText}|guide:${2:sectionName}]
+]]></content>
+    <tabTrigger>section..</tabTrigger>
+    <description>link to a section in GrailsDoc</description>
+    <scope>source.grails.gdoc</scope>
+</snippet>

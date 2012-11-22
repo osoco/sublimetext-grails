@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+{code:xml}
+${1:source}
+{code}
+]]></content>
+    <tabTrigger>xml..</tabTrigger>
+    <description>{code:xml} in GrailsDoc</description>
+    <scope>source.grails.gdoc</scope>
+</snippet>

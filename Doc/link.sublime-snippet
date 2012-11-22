@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+[${1:linkText}|${2:url}]
+]]></content>
+    <tabTrigger>link..</tabTrigger>
+    <description>external link in GrailsDoc</description>
+    <scope>source.grails.gdoc</scope>
+</snippet>

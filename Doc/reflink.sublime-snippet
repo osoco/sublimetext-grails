@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+[${1:category}|${2:referenceItem}]
+]]></content>
+    <tabTrigger>ref..</tabTrigger>
+    <description>link to reference item in GrailsDoc</description>
+    <scope>source.grails.gdoc</scope>
+</snippet>

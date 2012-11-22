@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+{table}
+ *${1:Header1}* | *${2:Header2}*
+ ${3:Cell1} | ${4:Cell2}
+{table}
+]]></content>
+    <tabTrigger>table..</tabTrigger>
+    <description>{table} in GrailsDoc</description>
+    <scope>source.grails.gdoc</scope>
+</snippet>

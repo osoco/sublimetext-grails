@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+[${1:class}|api:${2:package}.${1:class}]
+]]></content>
+    <tabTrigger>api..</tabTrigger>
+    <description>link to api in GrailsDoc</description>
+    <scope>source.grails.gdoc</scope>
+</snippet>
