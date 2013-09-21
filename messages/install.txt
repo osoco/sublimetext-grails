@@ -1,0 +1,24 @@
+Grails
+======
+
+Thank you for installing the Grails plugin!
+
+
+Features
+--------
+
+* Code completions for Grails file types, with automatic file type detection (Controllers, Services, and Domain classes for now)
+
+* Enable comment toggling in Groovy code and use GSP comments (%{-- --}%) in GSPs
+
+* GSP syntax highlighter (based on the TextMate bundle https://github.com/textmate/groovy-grails.tmbundle, with a few fixes)
+
+* Grails documentation (GDoc) syntax highlighting and snippets
+(Note: your color scheme might need to be adjusted to recognize the syntax highlighting changes)
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+More information is available at https://github.com/osoco/sublimetext-grails
+
+Please report any bugs and feature requests to https://github.com/osoco/sublimetext-grails/issues
+Pull requests are always welcome!

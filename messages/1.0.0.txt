@@ -1,0 +1,17 @@
+Grails
+======
+
+Your Grails plugin has been updated to version 1.0.0.
+
+
+Changes
+-------
+
+This version has no new features (sorry!). We are reorganizing the structure of our repository, so from now on, all changes will come with an announcement (like this file). It will also make it easier for us to be sure we only release stable, tested changes.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+More information is available at https://github.com/osoco/sublimetext-grails
+
+Please report any bugs and feature requests to https://github.com/osoco/sublimetext-grails/issues
+Pull requests are always welcome!
