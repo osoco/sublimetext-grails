@@ -1,6 +1,3 @@
-Grails
-======
-
 Thank you for installing the Grails plugin!
 
 
