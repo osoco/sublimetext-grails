@@ -1,27 +1,13 @@
-# Grails Sublime Text 2 Package
+# Grails Sublime Text Package
 
-The **Grails Sublime Text 2 Package** provides code completion, syntax highlighting and other tools to work with [Grails].
+The **Grails Sublime Text Package** provides code completion, syntax highlighting and other tools to work with [Grails].
 
 
 ## Installation
 
-There are two main ways to install the *Grails Sublime Text 2 Package*:
+[Sublime Package Control] is the recommended way to install this package. After installing package control, open the command palette (Tools -> Command Palette), start typing 'install' and use the arrow keys to select 'Package Control: Install Package' and hit enter. In a few seconds, a list of available packages will appear within the same menu. Start typing 'Grails', and once again use the arrow keys to select the Grails package. There should be no need to restart Sublime Text. 
 
-1. Via the [Sublime Package Control]. 
-
-2. Placing a Grails directory containing this resource under Packages.
-
-    Linux:
-
-        git clone git://github.com/osoco/sublimetext-grails.git ~/.config/sublime-text-2/Packages/Grails
-
-    OS X:
-
-        git clone git://github.com/osoco/sublimetext-grails.git ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Grails
-
-    Windows:
-
-        git clone git://github.com/osoco/sublimetext-grails.git "%APPDATA%\Sublime Text 2\Packages\Grails"
+If you prefer to install without package control, use the standard method for installing Sublime Text packages. Make sure to get the source code from the latest tag, because master may become unstable at any time.
 
 
 ## Features
