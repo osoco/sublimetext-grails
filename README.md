@@ -52,6 +52,6 @@ Thanks to [OSOCO] for providing us with time to work on this project!
 
 [Grails]: http://grails.org/
 [GDoc]: http://grails.org/doc/latest/guide/single.html#docengine
-[Sublime Package Control]: http://wbond.net/sublime_packages/package_control
+[Sublime Package Control]: https://sublime.wbond.net/
 [OSOCO]: http://osoco.es
 [issue tracker]: https://github.com/osoco/sublimetext-grails/issues
