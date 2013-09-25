@@ -8,13 +8,13 @@
 	</array>
 	<key>foldingStartMarker</key>
 	<string>(?x)
-		(&lt;(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl|g:javascript)\b.*?&gt;
+		(&lt;(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl|g:javascript|r:script)\b.*?&gt;
 		|&lt;!--(?!.*--&gt;)
 		|\{\s*($|\?&gt;\s*$|//|/\*(.*\*/\s*$|(?!.*?\*/)))
 		)</string>
 	<key>foldingStopMarker</key>
 	<string>(?x)
-		(&lt;/(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl|g:javascript)&gt;
+		(&lt;/(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl|g:javascript|r:script)&gt;
 		|^\s*--&gt;
 		|(^|\s)\}
 		)</string>
@@ -99,7 +99,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(^\s*)?(?=&lt;(?i:g:javascript))</string>
+			<string>(^\s*)?(?=&lt;(?i:g:javascript|r:script))</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>0</key>
@@ -111,7 +111,7 @@
 			<key>contentName</key>
 			<string>source.js</string>
 			<key>end</key>
-			<string>(?&lt;=&gt;)(?!&lt;(?i:g:javascript))(\s*\n)?</string>
+			<string>(?&lt;=&gt;)(?!&lt;(?i:g:javascript|r:script))(\s*\n)?</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>0</key>
@@ -124,7 +124,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>(&lt;)((?i:g:javascript))</string>
+					<string>(&lt;)((?i:g:javascript|r:script))</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -183,7 +183,7 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>((&lt;)/)((?i:g:javascript))(&gt;)</string>
+					<string>((&lt;)/)((?i:g:javascript|r:script))(&gt;)</string>
 					<key>name</key>
 					<string>meta.tag.template.javascript.html.grails</string>
 				</dict>
@@ -206,7 +206,7 @@
 					<key>contentName</key>
 					<string>source.js</string>
 					<key>end</key>
-					<string>(?=&lt;/(?i:g:javascript)&gt;)</string>
+					<string>(?=&lt;/(?i:g:javascript|r:script)&gt;)</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -219,7 +219,7 @@
 								</dict>
 							</dict>
 							<key>match</key>
-							<string>(//).*?((?=&lt;/(?i:g:javascript))|$\n?)</string>
+							<string>(//).*?((?=&lt;/(?i:g:javascript|r:script))|$\n?)</string>
 							<key>name</key>
 							<string>comment.line.double-slash.js</string>
 						</dict>
@@ -235,7 +235,7 @@
 								</dict>
 							</dict>
 							<key>end</key>
-							<string>\*/|(?=&lt;/(?i:g:javascript))</string>
+							<string>\*/|(?=&lt;/(?i:g:javascript|r:script))</string>
 							<key>endCaptures</key>
 							<dict>
 								<key>0</key>
