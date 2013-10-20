@@ -6,18 +6,6 @@
 	<array>
 		<string>gsp</string>
 	</array>
-	<key>foldingStartMarker</key>
-	<string>(?x)
-		(&lt;(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl|g:javascript)\b.*?&gt;
-		|&lt;!--(?!.*--&gt;)
-		|\{\s*($|\?&gt;\s*$|//|/\*(.*\*/\s*$|(?!.*?\*/)))
-		)</string>
-	<key>foldingStopMarker</key>
-	<string>(?x)
-		(&lt;/(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl|g:javascript)&gt;
-		|^\s*--&gt;
-		|(^|\s)\}
-		)</string>
 	<key>keyEquivalent</key>
 	<string>^~G</string>
 	<key>name</key>
@@ -26,266 +14,35 @@
 	<array>
 		<dict>
 			<key>begin</key>
-			<string>&lt;%--+(?!&gt;)=?</string>
-			<key>contentName</key>
-			<string>comment.block</string>
+			<string>&lt;%--</string>
+			<key>comment</key>
+			<string>JSP style comments</string>
 			<key>end</key>
 			<string>--%&gt;</string>
+			<key>name</key>
+			<string>comment.block.html.jsp</string>
 		</dict>
 		<dict>
 			<key>begin</key>
 			<string>%{--</string>
-			<key>captures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.comment.html.gsp</string>
-				</dict>
-			</dict>
+			<key>comment</key>
+			<string>GSP comments</string>
 			<key>end</key>
 			<string>--}%</string>
 			<key>name</key>
 			<string>comment.block.html.gsp</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>match</key>
-					<string>--</string>
-					<key>name</key>
-					<string>invalid.illegal.bad-comments-or-CDATA.html.gsp</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>&lt;%+(?!&gt;)=?</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.section.embedded.begin.groovy</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>(%)&gt;</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.section.embedded.end.groovy</string>
-				</dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>source.groovy</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>source.groovy</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>source.groovy</string>
-				</dict>
-			</array>
 		</dict>
 		<dict>
 			<key>include</key>
 			<string>#embedded-groovy</string>
 		</dict>
 		<dict>
-			<key>begin</key>
-			<string>(^\s*)?(?=&lt;(?i:g:javascript))</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.whitespace.embedded.leading.js</string>
-				</dict>
-			</dict>
-			<key>contentName</key>
-			<string>source.js</string>
-			<key>end</key>
-			<string>(?&lt;=&gt;)(?!&lt;(?i:g:javascript))(\s*\n)?</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.whitespace.embedded.trailing.js</string>
-				</dict>
-			</dict>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>begin</key>
-					<string>(&lt;)((?i:g:javascript))</string>
-					<key>beginCaptures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.tag.html.grails</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.tag.template.html.grails</string>
-						</dict>
-					</dict>
-					<key>end</key>
-					<string>/&gt;|(?=&gt;)</string>
-					<key>endCaptures</key>
-					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.tag.html.grails</string>
-						</dict>
-					</dict>
-					<key>name</key>
-					<string>meta.tag.template.javascript.html.grails</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>include</key>
-							<string>#tag-stuff</string>
-						</dict>
-					</array>
-				</dict>
-				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.tag.html.grails</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>source.js</string>
-						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.tag.template.html.grails</string>
-						</dict>
-						<key>4</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.tag.html.grails</string>
-						</dict>
-					</dict>
-					<key>match</key>
-					<string>((&lt;)/)((?i:g:javascript))(&gt;)</string>
-					<key>name</key>
-					<string>meta.tag.template.javascript.html.grails</string>
-				</dict>
-				<dict>
-					<key>begin</key>
-					<string>(&gt;)</string>
-					<key>beginCaptures</key>
-					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>meta.tag.template.javascript.html.grails</string>
-						</dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.tag.html.grails</string>
-						</dict>
-					</dict>
-					<key>contentName</key>
-					<string>source.js</string>
-					<key>end</key>
-					<string>(?=&lt;/(?i:g:javascript)&gt;)</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>captures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.definition.comment.begin.js</string>
-								</dict>
-							</dict>
-							<key>match</key>
-							<string>(//).*?((?=&lt;/(?i:g:javascript))|$\n?)</string>
-							<key>name</key>
-							<string>comment.line.double-slash.js</string>
-						</dict>
-						<dict>
-							<key>begin</key>
-							<string>/\*</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>0</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.definition.comment.begin.js</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>\*/|(?=&lt;/(?i:g:javascript))</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>0</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.definition.comment.end.js</string>
-								</dict>
-							</dict>
-							<key>name</key>
-							<string>comment.block.js</string>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>source.js</string>
-						</dict>
-					</array>
-				</dict>
-			</array>
-		</dict>
- 		<dict>
-			<key>begin</key>
-			<string>(&lt;/?)(\w+:\w+)</string>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.tag.html.grails</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.tag.template.html.grails</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>(/?&gt;)</string>
-			<key>name</key>
-			<string>meta.tag.template.html.grails</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#tag-stuff</string>
-				</dict>
-			</array>
+			<key>include</key>
+			<string>#embedded-js</string>
 		</dict>
 		<dict>
 			<key>include</key>
-			<string>text.html.basic</string>
+			<string>#html</string>
 		</dict>
 	</array>
 	<key>repository</key>
@@ -297,120 +54,150 @@
 				<dict>
 					<key>begin</key>
 					<string>\$\{</string>
-					<key>captures</key>
+					<key>beginCaptures</key>
 					<dict>
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.section.embedded.groovy</string>
+							<string>punctuation.definition.embedded.begin.groovy</string>
 						</dict>
 					</dict>
+					<key>comment</key>
+					<string>Groovy embedded in ${}</string>
+					<key>contentName</key>
+					<string>source.groovy.embedded.html.gsp</string>
 					<key>end</key>
 					<string>\}</string>
-					<key>name</key>
-					<string>source.groovy.embedded.html.grails</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.embedded.end.groovy</string>
+						</dict>
+					</dict>
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>match</key>
-							<string>\?|:</string>
-							<key>name</key>
-							<string>keyword.operator.ternary.expression-seperator.groovy</string>
+							<key>include</key>
+							<string>#groovy</string>
 						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>&lt;%(?:\=|!|@)?</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.embedded.begin.groovy</string>
+						</dict>
+					</dict>
+					<key>comment</key>
+					<string>Groovy embedded in &lt;% %&gt;, &lt;%! %&gt;, &lt;%= %&gt;, or &lt;%@ %&gt;</string>
+					<key>contentName</key>
+					<string>source.groovy.embedded.html.gsp</string>
+					<key>end</key>
+					<string>%&gt;</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.embedded.end.groovy</string>
+						</dict>
+					</dict>
+					<key>patterns</key>
+					<array>
 						<dict>
 							<key>include</key>
-							<string>source.groovy</string>
+							<string>#groovy</string>
 						</dict>
 					</array>
 				</dict>
 			</array>
 		</dict>
-		<key>string-double-quoted</key>
-		<dict>
-			<key>begin</key>
-			<string>"</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.begin.html.grails</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>"</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.end.html.grails</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>string.quoted.double.html.grails</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#embedded-groovy</string>
-				</dict>
-			</array>
-		</dict>
-		<key>string-single-quoted</key>
-		<dict>
-			<key>begin</key>
-			<string>'</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.begin.html.grails</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>'</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.end.html.grails</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>string.quoted.single.html.grails</string>
-		</dict>
-		<key>tag-attribute</key>
-		<dict>
-			<key>match</key>
-			<string>\b([a-zA-Z\-:]+)</string>
-			<key>name</key>
-			<string>entity.other.attribute-name.html.grails</string>
-		</dict>
-		<key>tag-stuff</key>
+		<key>embedded-js</key>
 		<dict>
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>include</key>
-					<string>#tag-attribute</string>
+					<key>begin</key>
+					<string>(?=(&lt;(?i:g:javascript)&gt;))</string>
+					<key>comment</key>
+					<string>Javascript embedded in &lt;g:javascript /&gt;</string>
+					<key>end</key>
+					<string>(?&lt;=&lt;/g:javascript&gt;)</string>
+					<key>name</key>
+					<string>source.js.embedded.html.gsp</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#embedded-groovy</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#html</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#js</string>
+						</dict>
+					</array>
 				</dict>
 				<dict>
-					<key>include</key>
-					<string>#string-double-quoted</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#string-single-quoted</string>
+					<key>begin</key>
+					<string>(?=(&lt;(?i:r:script)))</string>
+					<key>comment</key>
+					<string>Javascript embedded in &lt;r:script /&gt;</string>
+					<key>end</key>
+					<string>(?&lt;=&lt;/r:script&gt;)</string>
+					<key>name</key>
+					<string>source.js.embedded.html.gsp</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#embedded-groovy</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#html</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#js</string>
+						</dict>
+					</array>
 				</dict>
 			</array>
+		</dict>
+		<key>groovy</key>
+		<dict>
+			<key>comment</key>
+			<string>Groovy modified for GSPs</string>
+			<key>include</key>
+			<string>source.groovy.gsp</string>
+		</dict>
+		<key>html</key>
+		<dict>
+			<key>comment</key>
+			<string>HTML modified for GSPs</string>
+			<key>include</key>
+			<string>text.html.basic.gsp</string>
+		</dict>
+		<key>js</key>
+		<dict>
+			<key>include</key>
+			<string>source.js</string>
 		</dict>
 	</dict>
 	<key>scopeName</key>
 	<string>text.html.gsp</string>
 	<key>uuid</key>
-	<string>4D390986-4810-45E2-B4DB-27DEAE68FE5F</string>
+	<string>64fa00ff-9506-4cf4-ad0c-896802a23385</string>
 </dict>
 </plist>
