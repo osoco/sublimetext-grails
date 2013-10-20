@@ -16,7 +16,7 @@ If you prefer to install without package control, use the standard method for in
 
 - Enable comment toggling in Groovy code and use GSP comments (%{-- --}%) in GSPs
 
-- GSP syntax highlighter (based on the TextMate bundle https://github.com/textmate/groovy-grails.tmbundle, with a few fixes)
+- GSP syntax highlighting
 
 - Grails documentation ([GDoc]) syntax highlighting and snippets
 

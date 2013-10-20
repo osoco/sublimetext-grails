@@ -1,0 +1,24 @@
+Your Grails plugin has been updated to version 1.0.1.
+
+
+Changes
+-------
+
+The GSP syntax highlighting has been completely re-written. Besides simplifying the file, several issues should be resolved now:
+	- Division followed by a closing HTML tag is no longer treated as a regex (reported by dylanbromby)
+	- Improved embedded ternary operator highlighting (reported by hayseed)
+	- Highlighting of code embedded in HTML attributes (reported by tom-metz)
+	- Javascript highlighting within <r:script> tags (reported and fixed by Guigoz)
+	- More consistent scope naming
+
+Please note that we now provide modified versions of the HTML and Groovy syntax files (used *only* in GSP files), so any local changes you may have in those files will not be applied to GSP files.
+
+My testing shows much improved highlighting using most of the standard color schemes, but it is still not perfect. I suspect there will always be some edge cases that we simply can't detect due to the way syntax highlighting works in Sublime (that's the price for having such a snappy editor!). That being said, please do report any problems you find, and we'll see if something can be done. Full code examples and screenshots are useful!
+
+Thanks to everyone who took the time to report an issue, and especially to Guigoz for sending a pull request with a fix :)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+More information is available at https://github.com/osoco/sublimetext-grails
+
+Please report any bugs and feature requests to https://github.com/osoco/sublimetext-grails/issues
+Pull requests are always welcome!
