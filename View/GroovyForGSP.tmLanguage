@@ -969,7 +969,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>/(?=[^/]*[^/&lt;]/)</string>
+					<string>/(?=[^/]*[^/&lt;]/[^&gt;])</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>0</key>

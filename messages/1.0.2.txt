@@ -1,0 +1,16 @@
+Your Grails plugin has been updated to version 1.0.2.
+
+
+Changes
+-------
+
+Minor fix to GSP syntax highlighting: division followed by a closing HTML tag is no longer treated as a regex (neither </ nor /> this time).
+
+Thanks to dylanbromby for the report.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+More information is available at https://github.com/osoco/sublimetext-grails
+
+Please report any bugs and feature requests to https://github.com/osoco/sublimetext-grails/issues
+Pull requests are always welcome!
