@@ -11,6 +11,7 @@ Features
 * GSP syntax highlighter
 
 * Grails documentation (GDoc) syntax highlighting and snippets
+
 (Note: your color scheme might need to be adjusted to recognize the syntax highlighting changes)
 
 

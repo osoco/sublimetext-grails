@@ -565,31 +565,67 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>(?=\$\{)</string>
+					<string>\$\{</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.embedded.begin.groovy</string>
+						</dict>
+					</dict>
 					<key>comment</key>
 					<string>Groovy embedded in ${}</string>
+					<key>contentName</key>
+					<string>source.groovy.embedded.html.gsp</string>
 					<key>end</key>
-					<string>(?&lt;=\})</string>
+					<string>\}</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.embedded.end.groovy</string>
+						</dict>
+					</dict>
 					<key>patterns</key>
 					<array>
 						<dict>
 							<key>include</key>
-							<string>text.html.gsp</string>
+							<string>source.groovy.gsp</string>
 						</dict>
 					</array>
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(?=&lt;%\=)</string>
+					<string>&lt;%(?:\=|!|@)?</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.embedded.begin.groovy</string>
+						</dict>
+					</dict>
 					<key>comment</key>
-					<string>Groovy embedded in &lt;%= %&gt;</string>
+					<string>Groovy embedded in &lt;% %&gt;, &lt;%! %&gt;, &lt;%= %&gt;, or &lt;%@ %&gt;</string>
+					<key>contentName</key>
+					<string>source.groovy.embedded.html.gsp</string>
 					<key>end</key>
-					<string>(?&lt;=%&gt;)</string>
+					<string>%&gt;</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.embedded.end.groovy</string>
+						</dict>
+					</dict>
 					<key>patterns</key>
 					<array>
 						<dict>
 							<key>include</key>
-							<string>text.html.gsp</string>
+							<string>source.groovy.gsp</string>
 						</dict>
 					</array>
 				</dict>

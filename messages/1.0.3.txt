@@ -1,0 +1,16 @@
+Your Grails plugin has been updated to version 1.0.3.
+
+
+Changes
+-------
+
+Minor fix to GSP syntax highlighting: prevent Sublime Text 2 from hanging when typing ${}${var} or <%=%><%= var %>.
+
+Thanks to jonnybot0 and JohnMurley for the report.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+More information is available at https://github.com/osoco/sublimetext-grails
+
+Please report any bugs and feature requests to https://github.com/osoco/sublimetext-grails/issues
+Pull requests are always welcome!
