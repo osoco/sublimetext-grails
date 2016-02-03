@@ -1,0 +1,14 @@
+Your Grails plugin has been updated to version 1.0.4.
+
+
+Changes
+-------
+
+For Windows users: It seems domain, controller, and service classes were not being detected automatically under Windows. This should be fixed. Thank you to FichteFoll for the report.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+More information is available at https://github.com/osoco/sublimetext-grails
+
+Please report any bugs and feature requests to https://github.com/osoco/sublimetext-grails/issues
+Pull requests are always welcome!
