@@ -45,20 +45,13 @@ class GrailsSyntaxCommand(sublime_plugin.EventListener):
 
 
     def is_domain(self):
-        if 'grails-app/domain' in self.path:
-            return True
-        return False
-
+        return self.is_in_grails_subfolder('domain', self.path)
 
     def is_controller(self):
-        if 'grails-app/controllers' in self.path:
-            return True
-        return False
+        return self.is_in_grails_subfolder('controllers', self.path)
 
     def is_service(self):
-        if 'grails-app/services' in self.path:
-            return True
-        return False
+        return self.is_in_grails_subfolder('services', self.path)
 
 
     def set_file_variables(self):
@@ -70,3 +63,22 @@ class GrailsSyntaxCommand(sublime_plugin.EventListener):
     def set_syntax(self, syntax, path):
         new_syntax = 'Packages/' + path + '/' + syntax + '.tmLanguage'
         self.view.set_syntax_file(new_syntax)
+
+
+
+    def is_in_grails_subfolder(self, subfolder, file):
+        head, tail = os.path.split(file)
+        if tail == subfolder:
+            return self.is_in_grails_app(head)
+        elif head and tail:
+            return self.is_in_grails_subfolder(subfolder, head)
+        else:
+            return False
+
+    def is_in_grails_app(self, file):
+        head, tail = os.path.split(file)
+        if tail == 'grails-app':
+            return True
+        else:
+            return False
+
