@@ -14,13 +14,28 @@ If you prefer to install without package control, use the standard method for in
 
 - Code completions for Grails file types, with automatic file type detection (Controllers, Services, and Domain classes for now)
 
-- Enable comment toggling in Groovy code and use GSP comments (%{-- --}%) in GSPs
+- Enable comment toggling in Groovy code and use GSP comments (`%{-- --}%`) in GSPs
 
 - GSP syntax highlighting
 
 - Grails documentation ([GDoc]) syntax highlighting and snippets
 
 (Note: your color scheme might need to be adjusted to recognize the syntax highlighting changes)
+
+
+## Usage
+
+After installing the package, files inside a grails project should automatically get the correct syntax highlighting. The syntax selected for the current file is shown in the bottom right corner of Sublime. If for some reason it isn't detected correctly, you can set the syntax to use per file by choosing from the menu: View -> Syntax -> Grails. These are the default assignments:
+
+- All files ending in .gsp: Grails Server Page (GSP)
+- All files ending in .gdoc: Grails Doc (Gdoc)
+- Files ending in .groovy inside the folder 'grails-app/controller': Grails Controller (Groovy)
+- Files ending in .groovy inside the folder 'grails-app/domain': Grails Domain (Groovy)
+- Files ending in .groovy inside the folder 'grails-app/service': Grails Service (Groovy)
+
+To toggle comments in Groovy and GSP files, just use the usual command provided by Sublime: Edit -> Comment -> Toggle Comment.
+
+Code completion is also automatic. The available completions depend on the syntax. For example, open a domain class and start typing 'cons'. The suggestion 'constraints' should appear. By hitting enter, a constraints block will be inserted. Notice that the text 'property' is selected. This is a placeholder for you to fill in with an actual property name from your domain model. You can type the name and hit the tab key to move to the next placeholder, and so on.
 
 
 ## TODO
@@ -34,6 +49,8 @@ If you prefer to install without package control, use the standard method for in
 - Code completions for TagLibs, Tests, and Jobs
 
 - Improve code completions when multiple parameter lists are possible
+
+- Update for Grails 3
 
 
 ## Participate!
@@ -52,6 +69,6 @@ Thanks to [OSOCO] for providing us with time to work on this project!
 
 [Grails]: http://grails.org/
 [GDoc]: http://grails.org/doc/latest/guide/single.html#docengine
-[Sublime Package Control]: https://sublime.wbond.net/
+[Sublime Package Control]: https://packagecontrol.io/
 [OSOCO]: http://osoco.es
 [issue tracker]: https://github.com/osoco/sublimetext-grails/issues
