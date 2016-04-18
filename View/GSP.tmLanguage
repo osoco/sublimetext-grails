@@ -173,6 +173,31 @@
 						</dict>
 					</array>
 				</dict>
+				<dict>
+					<key>begin</key>
+					<string>(?=(&lt;(?i:asset:script)))</string>
+					<key>comment</key>
+					<string>Javascript embedded in &lt;asset:script /&gt;</string>
+					<key>end</key>
+					<string>(?&lt;=&lt;/asset:script&gt;)</string>
+					<key>name</key>
+					<string>source.js.embedded.html.gsp</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#embedded-groovy</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#html</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#js</string>
+						</dict>
+					</array>
+				</dict>
 			</array>
 		</dict>
 		<key>groovy</key>
