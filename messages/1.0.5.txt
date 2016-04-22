@@ -1,0 +1,14 @@
+Your Grails plugin has been updated to version 1.0.5.
+
+
+Changes
+-------
+
+Added Javascript syntax highlighting within <asset:script> tag. Thank you to dpcasady for the pull request!
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+More information is available at https://github.com/osoco/sublimetext-grails
+
+Please report any bugs and feature requests to https://github.com/osoco/sublimetext-grails/issues
+Pull requests are always welcome!
